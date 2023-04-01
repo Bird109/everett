@@ -1,0 +1,52 @@
+{
+	"name": "everett",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview",
+		"prepare": "svelte-kit sync",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-vercel": "next",
+		"@sveltejs/kit": "next",
+		"@types/pg": "^8.6.5",
+		"@typescript-eslint/eslint-plugin": "^5.10.1",
+		"@typescript-eslint/parser": "^5.10.1",
+		"autoprefixer": "^10.4.4",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^3.2.1",
+		"postcss": "^8.4.12",
+		"prettier": "^2.5.1",
+		"prettier-plugin-svelte": "^2.5.0",
+		"svelte": "^3.44.0",
+		"svelte-check": "^2.2.6",
+		"svelte-preprocess": "^4.10.1",
+		"tailwindcss": "^3.0.23",
+		"tslib": "^2.3.1",
+		"typescript": "~4.6.2"
+	},
+	"type": "module",
+	"dependencies": {
+		"@panzoom/panzoom": "^4.4.4",
+		"@supabase/supabase-js": "^1.33.3",
+		"@types/cookie": "^0.5.1",
+		"@types/jsonwebtoken": "^8.5.8",
+		"bcryptjs": "^2.4.3",
+		"cookie": "^0.4.2",
+		"googleapis": "^100.0.0",
+		"jsonwebtoken": "^8.5.1",
+		"nanoid": "^3.3.3",
+		"nodemailer": "^6.7.3",
+		"panzoom": "^9.4.2",
+		"svelte-gestures": "^1.4.1",
+		"svelte-loading-spinners": "^0.1.7",
+		"svg-pan-zoom": "^3.6.1"
+	}
+}
