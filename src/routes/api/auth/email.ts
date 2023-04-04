@@ -98,7 +98,7 @@ export const post: RequestHandler = async (event) => {
 		if (create_user.error) return returnError(500, create_user.error.message);
 	}
 	const transporter = await createTransporter();
-	const domain = dev ? 'http://localhost:3000' : 'https://nishi-dance.vercel.app';
+	const domain = dev ? 'http://localhost:3000' : 'https://everett-two.vercel.app';
 	const url = `${domain}/api/auth/verify?code=${code}`;
 	await transporter.sendMail({
 		from: email,
