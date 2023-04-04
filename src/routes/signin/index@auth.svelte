@@ -37,6 +37,7 @@
 			<p class="text-sm text-red-400">{message}</p>
 		{/if}
 		<ButtonPrimary on:click={signin} disabled={loading}>Continue</ButtonPrimary>
+		<ButtonPrimary on:click={signin}=location.href='$routes/tickets'>
 		<div class="mx-auto w-fit mt-1">
 			<a class="text-sm text-primary hover:underline cursor-pointer" href="/register">新規登録</a>
 		</div>
