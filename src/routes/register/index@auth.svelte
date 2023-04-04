@@ -17,7 +17,8 @@
 		if (password.length < 6) return (message = 'パスワードは6桁以上です。');
 		loading = true;
 		message = null;
-		href='/tickets'
+		<button onclick="location.href='/tickts'">
+	        </button>
 		const response = await fetch('/api/auth/email', {
 			method: 'POST',
 			body: JSON.stringify({ email, name, password })
